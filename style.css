@@ -194,3 +194,69 @@ section {
     font-size: 20px;
     margin: 5px 0;
 }
+
+:root {
+  --color-surface-subtle: #EAF2F9;
+  --color-surface-light: #9AC7E9;
+  --color-surface-default: #192732;
+  --color-surface-darker: #0C171E;
+  --color-subtle-border: #EAF2F9;
+
+  --color-border-subtle: #EAF2F9;
+  --color-border-light: #9AC7E9;
+  --color-border-default: #82BAE1;
+  --color-border-darker: #6492B0;
+
+  --color-text-header:#192732;
+  --color-text-label:#82BAE1;
+
+  --grayscale-text-caption:#5E5E5E;
+  --grayscale-text-negative:#FFFFFF;
+  --grayscale-text-title:#111111;
+  --grayscale-text-sub-caption:#919191;
+
+
+  --grayscale-surface-elevated:#C9C9C9;
+  --grayscale-surface-default:#E4E4E4;
+
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+
+h1 {
+color: var(--color-text-header;
+
+/* H1-header-Garrett */
+font-family: var(--Fonts-Style-Heading, Oswald);
+font-size: var(--Fonts-Size-Heading-H1, 42px);
+font-style: normal;
+font-weight: 400;
+line-height: var(--Fonts-Line-Height-Heading-H1, 55px); 
+
+}
+
+.hero-title {
+  color: var(--Blue-900, #192732);
+  font-family: sans-serif;
+  font-size: 55.15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+#career-stats{
+  display:grid;
+  grid-template-columns: auto auto auto;
+
+}
+
+#career-stats > div {
+  text-align: center;
+  background: lightseagreen;
+  border: 3px solid green;
+  padding: 20px;
+}
