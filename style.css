@@ -1,262 +1,286 @@
+/* ===================================
+   DESIGN TOKENS
+   =================================== */
 
+/* Font Size Scale (1.250 - Major Third Ratio) */
+:root {
+
+  /* Base size */
+  --font-size-base: 16px;
+  
+  /* Font size scale */
+  --font-size-xs: 0.8rem;      /* 12.8px */
+  --font-size-sm: 1rem;        /* 16px */
+  --font-size-md: 1.25rem;     /* 20px */
+  --font-size-lg: 1.563rem;    /* 25px */
+  --font-size-xl: 1.953rem;    /* 31.25px */
+  --font-size-2xl: 2.441rem;   /* 39px */
+  --font-size-3xl: 3.052rem;   /* 48.83px */
+  --font-size-4xl: 3.815rem;   /* 61px */
+  --font-size-5xl: 4.768rem;   /* 76.29px */
+  --font-size-6xl: 5.96rem;    /* 95.36px */
+  --font-size-7xl: 7.451rem;   /* 119.22px */
+
+  /* Font families */
+  --font-family-heading: 'Oswald', sans-serif;
+  --font-family-body: 'Roboto', sans-serif;
+
+  /* Font weights */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Grayscale */
+  --color-grayscale-0: #FFFFFF;
+  --color-grayscale-50: #F1F1F1;
+  --color-grayscale-100: #E4E4E4;
+  --color-grayscale-200: #C9C9C9;
+  --color-grayscale-300: #ABABAB;
+  --color-grayscale-400: #919191;
+  --color-grayscale-500: #777777;
+  --color-grayscale-600: #5E5E5E;
+  --color-grayscale-700: #474747;
+  --color-grayscale-800: #303030;
+  --color-grayscale-900: #1B1B1B;
+  --color-grayscale-950: #111111;
+  --color-grayscale-1000: #000000;
+
+
+
+  /* Skyline blue */
+  --color-skyline-blue-50: #F2F7FB;
+  --color-skyline-blue-100: #EAF2F9;
+  --color-skyline-blue-200: #CFE2F3;
+  --color-skyline-blue-300: #B8D6EE;
+  --color-skyline-blue-400: #9AC7E9;
+  --color-skyline-blue-500: #82BAE1;
+  --color-skyline-blue-600: #6492B0;
+  --color-skyline-blue-700: #4A6C84;
+  --color-skyline-blue-800: #2F4758;
+  --color-skyline-blue-900: #192732;
+  --color-skyline-blue-950: #0C171E;
+
+
+  /* Semantic colors */
+  --color-background-primary: var(--color-skyline-blue-50); 
+  --color-background-card-dark: var(--color-skyline-blue-900);
+  --color-background-card-darkest: var(--color-skyline-blue-950);
+  --color-background-highlight: var(--color-skyline-blue-50);
+  
+  --color-text-primary: var(--color-skyline-blue-900);
+  --color-text-secondary: var(--color-skyline-blue-800);
+  --color-text-tertiary: var(--color-grayscale-400);
+  --color-text-on-dark: var(--color-grayscale-0);
+  --color-text-on-light: var(--color-grayscale-1000);
+  --color-text-muted: var(--color-grayscale-200);
+  --color-text-pale: var(--color-skyline-blue-100);
+
+  /* Spacing */
+  --spacing-xs: 10px;
+  --spacing-sm: 15px;
+  --spacing-md: 20px;
+  --spacing-lg: 40px;
+  --spacing-xl: 60px;
+  --spacing-2xl: 80px;
+  --spacing-3xl: 100px;
+}
+
+/* ===================================
+   BASE STYLES
+   =================================== */
 
 body {
-    font-family: 'Oswald', sans-serif;
-    margin: 20px;
+  font-family: var(--font-family-heading);
+  margin: var(--spacing-md);
 }
 
 h1 {
-    font-family: 'Oswald', sans-serif;
-
+  font-family: var(--font-family-heading);
 }
 
-h2{
-    font-size: 50px;
-    font-weight: bold;
+h2 {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+  font-family: var(--font-family-body);
 }
 
+section {
+  background-color: var(--color-background-primary);
+}
 
+/* ===================================
+   HEADER
+   =================================== */
 
-/* Page Header */
 header {
-    background-color: #F2F7FB;
-    padding: 40px 20px;
+  background-color: var(--color-background-primary);
+  padding: var(--spacing-lg) var(--spacing-md);
 }
 
 .header-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header-text {
-    flex: 1;
+  flex: 1;
 }
 
 .header-text h1 {
-    font-size: 60px;
-    font-weight: normal;
-    margin: 0;
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-normal);
+  margin: 0;
 }
 
 .hero-title {
-    color: #192732;
-    font-size: 120px;
-    font-weight: 700;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-7xl);
+  font-weight: var(--font-weight-bold);
 }
 
 .header-text p {
-    font-size: 25px;
-    color: #2F4758;
-    margin: 0 0 0;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  margin: 0;
 }
 
 .header-image img {
-    max-height: 400px;
-    width: auto;
+  max-height: 400px;
+  width: auto;
 }
 
+/* ===================================
+   CAREER STATS
+   =================================== */
 
-section {
-    background-color: #F2F7FB;
-
-}
-
-
-/* CAREER STATS */
 #career-stats {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
 }
 
 .stat-box {
-    background-color: #192732;
-    padding: 40px;
-    text-align: center;
+  background-color: var(--color-background-card-dark);
+  padding: var(--spacing-lg);
+  text-align: center;
 }
 
 .stat-number {
-    font-family:'oswald', sans-serif;
-    color: white;
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 15px;
+  font-family: var(--font-family-heading);
+  color: var(--color-text-on-dark);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-sm);
 }
 
-.stat-sub{
-    font-family:'oswald', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
+.stat-sub {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
 }
 
 .stat-label {
-    font-family: 'Roboto', sans-serif;
-    color: #C9C8C8;
-    font-size: 16px;
+  font-family: var(--font-family-body);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
 }
 
-
-
-/* RECENT RACES */
+/* ===================================
+   RECENT RACES
+   =================================== */
 
 .race-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    border-color: black;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  border-color: var(--color-black);
+}
+
+.sort-filter {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-regular)
 }
 
 .race-info {
-    flex: 1;
+  flex: 1;
 }
 
-/* navy card */
-
-.race-card{
-    background-color: #0C171E;
-    padding: 20px;
+.race-card {
+  background-color: var(--color-background-card-darkest);
+  padding: var(--spacing-md);
 }
-
-/* box: 19 */
 
 .place-box {
-    background-color: #F2F7FB;
-    color: #000000;
-    padding: 15px 20px;
-    text-align: center;
-    min-width: 80px;
+  background-color: var(--color-background-highlight);
+  color: var(--color-text-on-light);
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-align: center;
+  min-width: 80px;
 }
 
-/* 19 */
 .place-number {
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 1;
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
 }
 
-/* th */
-
-.place-number-sub{
-    font-family:'oswald', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+.place-number-sub {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
 }
-
-/* SEC-HS Championship */
 
 .race-title h3 {
-    font-family: 'roboto', sans-serif;
-    color: white;
-    font-size: 30px;
-    margin: 0 0 0 0;
+  font-family: var(--font-family-body);
+  color: var(--color-text-on-dark);
+  font-size: var(--font-size-xl);
+  margin: 0;
 }
-
-/* 17:00.5 */
 
 .race-time {
-    background-color: #F2F7FB;
-    color: #000000;
-    padding: 10px 20px;
-    font-size: 28px;
-    font-weight: bold;
-    margin-left: auto;
+  background-color: var(--color-background-highlight);
+  color: var(--color-text-on-light);
+  padding: var(--spacing-xs) var(--spacing-md);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  margin-left: auto;
 }
 
-/* (Varsity Red)*/
-
 .race-subtitle {
-    color: #EAF2F9;
-    font-size: 20px;
-    margin: 0 0 10px 0;
+  color: var(--color-text-pale);
+  font-size: var(--font-size-md);
+  margin: 0 0 var(--spacing-xs) 0;
 }
 
 .race-sub {
-    color: #000000;
-    font-size: 20px;
-    margin: 0 0 10px 0;
+  color: var(--color-text-on-light);
+  font-size: var(--font-size-md);
+  margin: 0 0 var(--spacing-xs) 0;
 }
-/* Date, Location, Runners */
 
 .race-detail {
-    font-family: 'roboto', sans-serif;
-    color: #919191;
+  font-family: var(--font-family-body);
+  color: var(--color-text-tertiary);
 }
 
 .race-detail > div {
-    font-size: 20px;
-    margin: 5px 0;
-}
-
-:root {
-  --color-surface-subtle: #EAF2F9;
-  --color-surface-light: #9AC7E9;
-  --color-surface-default: #192732;
-  --color-surface-darker: #0C171E;
-  --color-subtle-border: #EAF2F9;
-
-  --color-border-subtle: #EAF2F9;
-  --color-border-light: #9AC7E9;
-  --color-border-default: #82BAE1;
-  --color-border-darker: #6492B0;
-
-  --color-text-header:#192732;
-  --color-text-label:#82BAE1;
-
-  --grayscale-text-caption:#5E5E5E;
-  --grayscale-text-negative:#FFFFFF;
-  --grayscale-text-title:#111111;
-  --grayscale-text-sub-caption:#919191;
-
-
-  --grayscale-surface-elevated:#C9C9C9;
-  --grayscale-surface-default:#E4E4E4;
-
-}
-
-body {
-  font-family: "Oswald", sans-serif;
+  font-size: var(--font-size-md);
+  margin: 5px 0;
 }
 
 
-h1 {
-color: var(--color-text-header;
+/* ===================================
+   FOOTER
+   =================================== */
 
-/* H1-header-Garrett */
-font-family: var(--Fonts-Style-Heading, Oswald);
-font-size: var(--Fonts-Size-Heading-H1, 42px);
-font-style: normal;
-font-weight: 400;
-line-height: var(--Fonts-Line-Height-Heading-H1, 55px); 
+footer {
+  margin-top: var(--spacing-3xl)
 
-}
-
-.hero-title {
-  color: var(--Blue-900, #192732);
-  font-family: sans-serif;
-  font-size: 55.15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-
-#career-stats{
-  display:grid;
-  grid-template-columns: auto auto auto;
-
-}
-
-#career-stats > div {
-  text-align: center;
-  background: lightseagreen;
-  border: 3px solid green;
-  padding: 20px;
 }
