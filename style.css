@@ -1,55 +1,196 @@
-* {
-  background: #F2F7FB;
-}
+
 
 body {
-  font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+
+}
+
+h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
 }
 
 
-h1 {
-  color: var(--Blue-900, #192732);
-  font-family: sans-serif;
-  font-size: 41.11px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 
+/* Page Header */
+header {
+    background-color: #F2F7FB;
+    padding: 40px 20px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-text {
+    flex: 1;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    font-weight: normal;
+    margin: 0;
 }
 
 .hero-title {
-  color: var(--Blue-900, #192732);
-  font-family: sans-serif;
-  font-size: 55.15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-  
-
-h2{
-  color: var(--Blue-950, #0C171E);
-  font-family: Oswald;
-  font-size: 29px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+    color: #192732;
+    font-size: 120px;
+    font-weight: 700;
 }
 
-#h2-sub {
-  color: #000;
-  font-family: Oswald;
-  font-size: 16.27px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+.header-text p {
+    font-size: 25px;
+    color: #2F4758;
+    margin: 0 0 0;
 }
 
-h3 {
-  color: var(--Greyscale-950, #111);
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+.header-image img {
+    max-height: 400px;
+    width: auto;
+}
+
+
+section {
+    background-color: #F2F7FB;
+
+}
+
+
+/* CAREER STATS */
+#career-stats {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.stat-box {
+    background-color: #192732;
+    padding: 40px;
+    text-align: center;
+}
+
+.stat-number {
+    font-family:'oswald', sans-serif;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.stat-sub{
+    font-family:'oswald', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-family: 'Roboto', sans-serif;
+    color: #C9C8C8;
+    font-size: 16px;
+}
+
+
+
+/* RECENT RACES */
+
+.race-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    border-color: black;
+}
+
+.race-info {
+    flex: 1;
+}
+
+/* navy card */
+
+.race-card{
+    background-color: #0C171E;
+    padding: 20px;
+}
+
+/* box: 19 */
+
+.place-box {
+    background-color: #F2F7FB;
+    color: #000000;
+    padding: 15px 20px;
+    text-align: center;
+    min-width: 80px;
+}
+
+/* 19 */
+.place-number {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* th */
+
+.place-number-sub{
+    font-family:'oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* SEC-HS Championship */
+
+.race-title h3 {
+    font-family: 'roboto', sans-serif;
+    color: white;
+    font-size: 30px;
+    margin: 0 0 0 0;
+}
+
+/* 17:00.5 */
+
+.race-time {
+    background-color: #F2F7FB;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+/* (Varsity Red)*/
+
+.race-subtitle {
+    color: #EAF2F9;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.race-sub {
+    color: #000000;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+/* Date, Location, Runners */
+
+.race-detail {
+    font-family: 'roboto', sans-serif;
+    color: #919191;
+}
+
+.race-detail > div {
+    font-size: 20px;
+    margin: 5px 0;
 }
