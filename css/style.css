@@ -6,20 +6,16 @@
 :root {
 
   /* Base size */
-  --font-size-base: 16px;
+  --font-size-base: 14px;
   
   /* Font size scale */
-  --font-size-xs: 0.8rem;      /* 12.8px */
-  --font-size-sm: 1rem;        /* 16px */
-  --font-size-md: 1.25rem;     /* 20px */
-  --font-size-lg: 1.563rem;    /* 25px */
-  --font-size-xl: 1.953rem;    /* 31.25px */
-  --font-size-2xl: 2.441rem;   /* 39px */
-  --font-size-3xl: 3.052rem;   /* 48.83px */
-  --font-size-4xl: 3.815rem;   /* 61px */
-  --font-size-5xl: 4.768rem;   /* 76.29px */
-  --font-size-6xl: 5.96rem;    /* 95.36px */
-  --font-size-7xl: 7.451rem;   /* 119.22px */
+  --font-size-xs: 0.8rem;      /* 11.2px */
+  --font-size-sm: 1rem;        /* 14px */
+  --font-size-md: 1.25rem;     /* 17.5px */
+  --font-size-lg: 1.563rem;    /* 21.88px */
+  --font-size-xl: 1.953rem;    /* 27.34px */
+  --font-size-2xl: 2.441rem;   /* 34.17px */
+  --font-size-3xl: 3.052rem;   /* 42.73px */
 
   /* Font families */
   --font-family-heading: 'Oswald', sans-serif;
@@ -44,8 +40,6 @@
   --color-grayscale-950: #111111;
   --color-grayscale-1000: #000000;
 
-
-
   /* Skyline blue */
   --color-skyline-blue-50: #F2F7FB;
   --color-skyline-blue-100: #EAF2F9;
@@ -58,7 +52,6 @@
   --color-skyline-blue-800: #2F4758;
   --color-skyline-blue-900: #192732;
   --color-skyline-blue-950: #0C171E;
-
 
   /* Semantic colors */
   --color-background-primary: var(--color-skyline-blue-50); 
@@ -88,9 +81,13 @@
    BASE STYLES
    =================================== */
 
+
 body {
   font-family: var(--font-family-heading);
-  margin: var(--spacing-md);
+  background-color: var(--color-background-primary);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -100,14 +97,17 @@ h1 {
 h2 {
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
+  padding: 0 var(--spacing-md);
 }
 
 p {
   font-family: var(--font-family-body);
 }
 
-section {
-  background-color: var(--color-background-primary);
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
 }
 
 /* ===================================
@@ -132,14 +132,14 @@ header {
 }
 
 .header-text h1 {
-  font-size: var(--font-size-4xl);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-normal);
   margin: 0;
 }
 
 .hero-title {
   color: var(--color-text-primary);
-  font-size: var(--font-size-7xl);
+  font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
 }
 
@@ -151,6 +151,7 @@ header {
 
 .header-image img {
   max-height: 400px;
+  max-width: 100%;
   width: auto;
 }
 
@@ -160,10 +161,11 @@ header {
 
 #career-stats {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-md);
   padding: var(--spacing-md);
 }
+
 
 .stat-box {
   background-color: var(--color-background-card-dark);
@@ -195,17 +197,21 @@ header {
    RECENT RACES
    =================================== */
 
+.sort-filter {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-normal);
+  padding: 0 var(--spacing-md);
+}
+
+/* ===================================
+   RACE CARD
+   =================================== */
+
 .race-header {
   display: flex;
   align-items: flex-start;
   gap: var(--spacing-md);
-  border-color: var(--color-black);
-}
-
-.sort-filter {
-  font-family: var(--font-family-body);
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-regular)
 }
 
 .race-info {
@@ -215,6 +221,7 @@ header {
 .race-card {
   background-color: var(--color-background-card-darkest);
   padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
 }
 
 .place-box {
@@ -226,21 +233,23 @@ header {
 }
 
 .place-number {
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
   line-height: 1;
 }
 
 .place-number-sub {
   font-family: var(--font-family-heading);
-  font-size: var(--font-size-md);
+  color: var(--color-text-on-light);
+  margin: 0 0 var(--spacing-xs) 0;
+  font-size: var(--font-size-xs);
   font-weight: var(--font-weight-bold);
 }
 
 .race-title h3 {
   font-family: var(--font-family-body);
   color: var(--color-text-on-dark);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-md);
   margin: 0;
 }
 
@@ -248,19 +257,14 @@ header {
   background-color: var(--color-background-highlight);
   color: var(--color-text-on-light);
   padding: var(--spacing-xs) var(--spacing-md);
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
   margin-left: auto;
+  white-space: nowrap;
 }
 
 .race-subtitle {
   color: var(--color-text-pale);
-  font-size: var(--font-size-md);
-  margin: 0 0 var(--spacing-xs) 0;
-}
-
-.race-sub {
-  color: var(--color-text-on-light);
   font-size: var(--font-size-md);
   margin: 0 0 var(--spacing-xs) 0;
 }
@@ -275,12 +279,10 @@ header {
   margin: 5px 0;
 }
 
-
 /* ===================================
    FOOTER
    =================================== */
 
 footer {
-  margin-top: var(--spacing-3xl)
-
+  margin-top: var(--spacing-3xl);
 }
