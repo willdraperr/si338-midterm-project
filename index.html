@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cross Country Team</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -131,7 +131,7 @@
     =================================== -->
 
     <div class="recent-races-container">
-        <div class="race-card">
+        <div class="race-card" onclick="toggleCard(this)">
 
             <!-- PLACE TIME -->
             
@@ -175,7 +175,7 @@
 
             </div>
 
-            <div class="historical-container">
+            <div class="historical-container hidden">
                 <div class="historical-place-time-grade">
                     <!-- PLACE - GRADE -->
                     <div class="historical-place-grade">
@@ -215,12 +215,28 @@
             </div>
 
                 <!-- CHEVRON -->
-                <div class="chevron-container" onclick="toggleCard(this)">
-                    <img class="chevron-vector" src="assets/icon/chevron-vector.svg" alt="chevron">
-                </div>
+                    <div class="chevron-container">
+                        <img class="chevron-vector" src="assets/icon/chevron-vector.svg" alt="chevron">
+                    </div>
             
             </div> 
         </div>
     </div>
+
+
+<!-- JAVA SCRIPT -->
+
+<script>
+function toggleCard(card) {
+    const historical = card.querySelector('.historical-container');
+    const chevron = card.querySelector('.chevron-vector');
+    
+    historical.classList.toggle('hidden');
+    chevron.classList.toggle('rotated');
+}
+</script>
+
+
+</body>
 
 </html>
