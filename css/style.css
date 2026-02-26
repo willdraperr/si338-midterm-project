@@ -1,8 +1,12 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
   background-color: #F2F7FB;
   display: flex;
-  /* width: 320px; */
-  /* height: 2530px; */
+  width: 100%;
+  overflow-x: hidden;
   flex-direction: column;
   align-items: flex-start;
   font-family: 'Roboto', sans-serif;
@@ -595,4 +599,19 @@ body{
 .chevron-vector{
   width: 12px;
   height: 7.41px;
+}
+
+
+/* COLLAPSE HISTORICAL DATA */
+
+.historical-container.hidden {
+    display: none;
+}
+
+.chevron-vector {
+    transition: transform 0.3s ease;
+}
+
+.chevron-vector.rotated {
+    transform: rotate(180deg);
 }
