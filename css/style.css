@@ -239,6 +239,7 @@ body{
   gap: 10px;
   aspect-ratio: 1/1;
   background: #F2F7FB;
+  border-radius: 10px;
 }
 
 .place-number{
@@ -265,6 +266,7 @@ body{
   justify-content: center;
   align-items: center;
   background: #F2F7FB;
+  border-radius: 10px;
 }
 
 .time-text{
@@ -385,3 +387,212 @@ body{
   /* aspect-ratio: 14/17; */
 }
 
+/* ===================================
+    HISTORICAL RACE DATA
+    =================================== */
+
+
+.historical-container{
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  background: #FFF;
+  border-radius: 10px;
+}
+
+/* TIME - PLACE - GRADE */
+
+.historical-place-time-grade{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+}
+
+/* PLACE - GRADE */
+
+.historical-place-grade{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* PLACE */
+
+.historical-place{
+  display: flex;
+  width: 57px;
+  height: 57px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  aspect-ratio: 1/1;
+  background: #192732;
+  border-radius: 10px;
+}
+
+.historical-place-text{
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.historical-place-suffix{
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* GRADE */
+
+.historical-grade{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.historical-grade-text{
+  color: #0C171E;
+  font-family: Oswald;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* TIME */
+
+.historical-time{
+  display: flex;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  background: #192732;
+  align-self: flex-start;
+  border-radius: 10px;
+}
+
+.historical-time-text{
+  color: #FFF;
+  font-family: roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+/* HISTORICAL RACE DETAILS */
+
+.historical-date-location-runners{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+/* DATE */
+
+.historical-date{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.historical-date-vector{
+  width: 14px;
+  height: 16px;
+  aspect-ratio: 7/8;
+}
+
+.historical-date-text{
+  color: #474747;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* LOCATION */
+
+.historical-location{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.historical-location-vector{
+  width: 14px;
+  height: 16px;
+}
+
+.historical-location-text{
+  color: #474747;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* RUNNERS */
+
+.historical-runners{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.historical-runner-vector{
+  width: 14px;
+  height: 17px;
+  aspect-ratio: 14/17;
+}
+
+.historical-runner-text{
+  color: #474747;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* CHEVRON */
+
+.chevron-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.chevron{
+  display: flex;
+  width: 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.chevron-vector{
+  width: 12px;
+  height: 7.41px;
+}
