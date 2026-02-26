@@ -1,288 +1,387 @@
-/* ===================================
-   DESIGN TOKENS
-   =================================== */
-
-/* Font Size Scale (1.250 - Major Third Ratio) */
-:root {
-
-  /* Base size */
-  --font-size-base: 14px;
-  
-  /* Font size scale */
-  --font-size-xs: 0.8rem;      /* 11.2px */
-  --font-size-sm: 1rem;        /* 14px */
-  --font-size-md: 1.25rem;     /* 17.5px */
-  --font-size-lg: 1.563rem;    /* 21.88px */
-  --font-size-xl: 1.953rem;    /* 27.34px */
-  --font-size-2xl: 2.441rem;   /* 34.17px */
-  --font-size-3xl: 3.052rem;   /* 42.73px */
-
-  /* Font families */
-  --font-family-heading: 'Oswald', sans-serif;
-  --font-family-body: 'Roboto', sans-serif;
-
-  /* Font weights */
-  --font-weight-normal: 400;
-  --font-weight-bold: 700;
-
-  /* Grayscale */
-  --color-grayscale-0: #FFFFFF;
-  --color-grayscale-50: #F1F1F1;
-  --color-grayscale-100: #E4E4E4;
-  --color-grayscale-200: #C9C9C9;
-  --color-grayscale-300: #ABABAB;
-  --color-grayscale-400: #919191;
-  --color-grayscale-500: #777777;
-  --color-grayscale-600: #5E5E5E;
-  --color-grayscale-700: #474747;
-  --color-grayscale-800: #303030;
-  --color-grayscale-900: #1B1B1B;
-  --color-grayscale-950: #111111;
-  --color-grayscale-1000: #000000;
-
-  /* Skyline blue */
-  --color-skyline-blue-50: #F2F7FB;
-  --color-skyline-blue-100: #EAF2F9;
-  --color-skyline-blue-200: #CFE2F3;
-  --color-skyline-blue-300: #B8D6EE;
-  --color-skyline-blue-400: #9AC7E9;
-  --color-skyline-blue-500: #82BAE1;
-  --color-skyline-blue-600: #6492B0;
-  --color-skyline-blue-700: #4A6C84;
-  --color-skyline-blue-800: #2F4758;
-  --color-skyline-blue-900: #192732;
-  --color-skyline-blue-950: #0C171E;
-
-  /* Semantic colors */
-  --color-background-primary: var(--color-skyline-blue-50); 
-  --color-background-card-dark: var(--color-skyline-blue-900);
-  --color-background-card-darkest: var(--color-skyline-blue-950);
-  --color-background-highlight: var(--color-skyline-blue-50);
-  
-  --color-text-primary: var(--color-skyline-blue-900);
-  --color-text-secondary: var(--color-skyline-blue-800);
-  --color-text-tertiary: var(--color-grayscale-400);
-  --color-text-on-dark: var(--color-grayscale-0);
-  --color-text-on-light: var(--color-grayscale-1000);
-  --color-text-muted: var(--color-grayscale-200);
-  --color-text-pale: var(--color-skyline-blue-100);
-
-  /* Spacing */
-  --spacing-xs: 10px;
-  --spacing-sm: 15px;
-  --spacing-md: 20px;
-  --spacing-lg: 40px;
-  --spacing-xl: 60px;
-  --spacing-2xl: 80px;
-  --spacing-3xl: 100px;
-}
-
-/* ===================================
-   BASE STYLES
-   =================================== */
-
-
-body {
-  font-family: var(--font-family-heading);
-  background-color: var(--color-background-primary);
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-h1 {
-  font-family: var(--font-family-heading);
-}
-
-h2 {
-  font-size: var(--font-size-3xl);
-  font-weight: var(--font-weight-bold);
-  padding: 0 var(--spacing-md);
-}
-
-p {
-  font-family: var(--font-family-body);
-}
-
-.page-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-md);
-}
-
-/* ===================================
-   HEADER
-   =================================== */
-
-header {
-  background-color: var(--color-background-primary);
-  padding: var(--spacing-lg) var(--spacing-md);
-}
-
-.header-content {
+body{
+  background-color: #F2F7FB;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  /* width: 320px; */
+  /* height: 2530px; */
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Roboto', sans-serif;
 }
 
-.header-text {
-  flex: 1;
+/* ===================================
+    HEADER
+    =================================== */
+
+.hero-header{
+  display: flex;
+  padding: 15px 12px;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
 }
 
-.header-text h1 {
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-normal);
-  margin: 0;
+.header-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
 }
 
-.hero-title {
-  color: var(--color-text-primary);
-  font-size: var(--font-size-3xl);
-  font-weight: var(--font-weight-bold);
+.hero-text{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2px;
 }
 
-.header-text p {
-  font-size: var(--font-size-lg);
-  color: var(--color-text-secondary);
-  margin: 0;
+/* TEXT STYLES */
+
+.hero-text-garrett{
+  color: #000;
+  font-family: Oswald;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.header-image img {
-  max-height: 400px;
-  max-width: 100%;
+.hero-text-comer{
+ color: #000;
+  font-family: Oswald;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.hero-sub-1-text{
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.hero-sub-2-text{
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+
+/* IMAGE STYLE */
+
+.header-image img{
   width: auto;
+  height: 263px;
+}
+
+
+/* ===================================
+    CARRER STATS HEADER
+    =================================== */
+
+.carrer-stats{
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 38px;
+  /* align-self: stretch; */
+}
+
+.carrer-stats-header{
+  color: #000;
+  font-family: Oswald;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 /* ===================================
-   CAREER STATS
-   =================================== */
+    CARRER STAT BOXES
+    =================================== */
 
-#career-stats {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-md);
-  padding: var(--spacing-md);
+.carrer-stat-table{
+  display: flex;
+  padding: 20px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
+.carrer-stat-card{
+  display: flex;
+  width: 130px;
+  height: 130px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 41px;
+  /* aspect-ratio: 1/1; */
+  background: #0C171E;
+  border-radius: 10px;
+}
 
-.stat-box {
-  background-color: var(--color-background-card-dark);
-  padding: var(--spacing-lg);
+.carrer-stat{
+  color: #FFF;
   text-align: center;
+  font-family: Oswald;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.stat-number {
-  font-family: var(--font-family-heading);
-  color: var(--color-text-on-dark);
-  font-size: var(--font-size-3xl);
-  font-weight: var(--font-weight-bold);
-  margin-bottom: var(--spacing-sm);
-}
-
-.stat-sub {
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-bold);
-}
-
-.stat-label {
-  font-family: var(--font-family-body);
-  color: var(--color-text-muted);
-  font-size: var(--font-size-sm);
+.carrer-stat-description{
+  color: #C9C8C8;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* ===================================
-   RECENT RACES
-   =================================== */
+    RECENT RACES HEADER  
+    =================================== */
 
-.sort-filter {
-  font-family: var(--font-family-body);
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-normal);
-  padding: 0 var(--spacing-md);
+.recent-races-header{
+  display: flex;
+  padding: 10px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
 }
 
-/* ===================================
-   RACE CARD
-   =================================== */
+.recent-races-header-text{
+  color: #000;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 
-.race-header {
+.filter-container{
   display: flex;
   align-items: flex-start;
-  gap: var(--spacing-md);
+  gap: 13px;
 }
 
-.race-info {
-  flex: 1;
-}
-
-.race-card {
-  background-color: var(--color-background-card-darkest);
-  padding: var(--spacing-md);
-  margin-bottom: var(--spacing-md);
-}
-
-.place-box {
-  background-color: var(--color-background-highlight);
-  color: var(--color-text-on-light);
-  padding: var(--spacing-sm) var(--spacing-md);
+.filter-text{
+  color: #000;
   text-align: center;
-  min-width: 80px;
+  font-family: Oswald;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.place-number {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-bold);
-  line-height: 1;
-}
-
-.place-number-sub {
-  font-family: var(--font-family-heading);
-  color: var(--color-text-on-light);
-  margin: 0 0 var(--spacing-xs) 0;
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-bold);
-}
-
-.race-title h3 {
-  font-family: var(--font-family-body);
-  color: var(--color-text-on-dark);
-  font-size: var(--font-size-md);
-  margin: 0;
-}
-
-.race-time {
-  background-color: var(--color-background-highlight);
-  color: var(--color-text-on-light);
-  padding: var(--spacing-xs) var(--spacing-md);
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-bold);
-  margin-left: auto;
-  white-space: nowrap;
-}
-
-.race-subtitle {
-  color: var(--color-text-pale);
-  font-size: var(--font-size-md);
-  margin: 0 0 var(--spacing-xs) 0;
-}
-
-.race-detail {
-  font-family: var(--font-family-body);
-  color: var(--color-text-tertiary);
-}
-
-.race-detail > div {
-  font-size: var(--font-size-md);
-  margin: 5px 0;
-}
 
 /* ===================================
-   FOOTER
-   =================================== */
+    RECENT RACES CARD  
+    =================================== */
 
-footer {
-  margin-top: var(--spacing-3xl);
+.recent-races-container{
+  display: flex;
+  padding: 10px 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex: 1 0 0;
+  align-self: stretch;
+  width: 100%;
 }
+
+/* RACE CARD */
+
+.race-card{
+  display: flex;
+  padding: 12px 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+  align-self: stretch;
+  background: #0C171E;
+  border-radius: 10px;
+}
+
+/* PLACE TIME */
+
+.place-time{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.place{
+  display: flex;
+  width: 57px;
+  height: 57px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  aspect-ratio: 1/1;
+  background: #F2F7FB;
+}
+
+.place-number{
+  color: #000;
+  font-family: Oswald;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.place-suffix{
+  color: #000;
+  font-family: Oswald;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.time{
+  display: flex;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  background: #F2F7FB;
+}
+
+.time-text{
+  color: #111;
+  font-family: Oswald;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* RACE TITLE */
+
+.race-title{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  align-self: stretch;
+}
+
+.event-title{
+  align-self: stretch;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.event-sub-title{
+  color: #EAF2F9;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/* RACE DETAILS */
+
+.race-details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+
+/* DATE  */
+
+.date{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.date-text{
+  color: #919191;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.date-vector{
+  width: 14px;
+  height: 16px;
+  /* aspect-ratio: 7/8; */
+}
+
+
+/* LOCATION */
+
+.location{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.location-text{
+  color: #919191;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.location-vector{
+  width: 14px;
+  height: 16px;
+}
+
+/* RUNNERS */
+
+.runner{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.runner-text{
+  color: #919191;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.runner-vector{
+  width: 14px;
+  height: 16px;
+  /* aspect-ratio: 14/17; */
+}
+
