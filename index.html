@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -169,15 +169,58 @@
 
                 <!-- RUNNER -->
                 <div class="runner">
-                    <img class="runner-vector" src="assets/icon/runner-vector.png" alt="runner icon">
+                    <img class="runner-vector" src="assets/icon/runner-vector.svg" alt="runner icon">
                     <div class="runner-text">Runner</div>
                 </div>
 
-
             </div>
 
-        </div>
+            <div class="historical-container">
+                <div class="historical-place-time-grade">
+                    <!-- PLACE - GRADE -->
+                    <div class="historical-place-grade">
 
+                        <!-- PLACE -->
+                        <div class="historical-place">
+                            <div class="historical-place-text">52<span class="historical-place-suffix">nd</span></div>
+                        </div>
+                       
+                        <!-- GRADE -->
+                        <div class="historical-grade">
+                            <div class="historical-grade-text">9th Grade</div>
+                        </div>  
+                    </div>
+
+                        <!-- TIME -->
+                    <div class="historical-time">
+                        <div class="historical-time-text">16:44.5</div>
+                    </div>
+                </div>
+
+                <!-- HISTORICAL RACE DETAILS -->
+                    <div class="historical-date-location-runners">
+                        <div class="historical-date">
+                            <img class="historical-date-vector" src="assets/icon/date-vector.svg" alt="calendar icon">
+                            <div class="historical-date-text">Nov 8, 2025</div>
+                        </div>
+                        <div class="historical-location">
+                            <img class="historical-location-vector" src="assets/icon/location-vector.svg" alt="location icon">
+                            <div class="historical-location-text">Location</div>
+                        </div>
+                        <div class="historical-runners">
+                            <img class="historical-runner-vector" src="assets/icon/runner-vector.svg" alt="runner icon">
+                            <div class="historical-runner-text">Runner</div>
+                        </div>
+                    </div>
+            </div>
+
+                <!-- CHEVRON -->
+                <div class="chevron-container" onclick="toggleCard(this)">
+                    <img class="chevron-vector" src="assets/icon/chevron-vector.svg" alt="chevron">
+                </div>
+            
+            </div> 
+        </div>
     </div>
 
 </html>
