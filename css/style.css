@@ -1,422 +1,443 @@
-* {
+*{
   box-sizing: border-box;
 }
-html {
-  font-size: 16px; /* base — responsive.css overrides this at breakpoints */
-}
 
-body {
+body{
   background-color: #F2F7FB;
   display: flex;
   width: 100%;
   overflow-x: hidden;
   flex-direction: column;
-  align-items: flex-start;
   font-family: 'Roboto', sans-serif;
+  /* margin: 0 30px; */
 }
-
 
 /* ===================================
     HEADER
     =================================== */
 
-.hero-header {
+.hero-header{
   display: flex;
-  padding: 0.9375rem 0.75rem;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
-  width: 100%;
+  align-self: stretch;
+  gap: 0.625rem;
+  border: red solid;
 }
 
-.header-text {
+.header-text{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.25rem;
+  border: green solid;
 }
 
-.hero-text {
+.hero-text{
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: center;
   gap: 0.125rem;
+  align-self: stretch;
 }
 
-.hero-text-garrett {
+/* TEXT STYLES */
+
+.hero-text-garrett{
   color: #000;
-  font-family: 'Oswald', sans-serif;
+  font-family: Oswald;
   font-size: 1.4375rem;
+  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.hero-text-comer {
+.hero-text-comer{
   color: #000;
-  font-family: 'Oswald', sans-serif;
+  font-family: Oswald;
   font-size: 1.875rem;
+  font-style: normal;
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 2.625rem;
 }
 
-.hero-sub-1-text {
+.hero-sub-1-text{
   color: #000;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto;
   font-size: 1.125rem;
+  font-style: normal;
   font-weight: 300;
   line-height: normal;
+  text-align: right;
+  align-self:stretch;
 }
 
-.hero-sub-2-text {
+.hero-sub-2-text{
   color: #000;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto;
   font-size: 1rem;
+  font-style: normal;
   font-weight: 300;
   line-height: normal;
+  text-align: right;
+  align-self:stretch;
 }
 
-.header-image {
-  width: 45%;
-}
 
-.header-image img {
-  width: 100%;
-  height: auto;
-  max-height: 40vh;
-  object-fit: contain;
+/* IMAGE STYLE */
+
+.header-image img{
+  width: 6.125rem;
+  height: 15.5625rem;
 }
 
 
 /* ===================================
-    CAREER STATS HEADER
+    CARRER STATS HEADER
     =================================== */
 
-.carrer-stats {
+.carrer-stats{
   display: flex;
   padding: 0.625rem 1.25rem;
   align-items: center;
-  width: 100%;
+  gap: 2.375rem;
+  align-self: stretch;
+  border: black solid;
 }
 
-.carrer-stats-header {
+.carrer-stats-header{
   color: #000;
-  font-family: 'Oswald', sans-serif;
+  font-family: Oswald;
   font-size: 1.625rem;
+  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-
 /* ===================================
-    CAREER STAT BOXES
+    CARRER STAT BOXES
     =================================== */
 
-.carrer-stat-table {
+.carrer-stat-table{
   display: flex;
   padding: 1.25rem;
+  align-items: flex-start;
+  align-content: flex-start;
   gap: 0.75rem;
-  width: 100%;
+  align-self: stretch;
   flex-wrap: wrap;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  align-content: flex-start;
 }
 
-.carrer-stat-card {
-  flex: 1 1 38vw;
-  max-width: 38vw;
-  aspect-ratio: 1 / 1;
+.carrer-stat-card{
   display: flex;
+  width: 8.125rem;
+  height: 8.125rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 2.5625rem;
   background: #0C171E;
   border-radius: 0.625rem;
 }
 
-.carrer-stat {
-  color: #fff;
+.carrer-stat{
+  color: #FFF;
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: Oswald;
   font-size: 1.625rem;
+  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.carrer-stat-description {
+.carrer-stat-description{
   color: #C9C8C8;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto;
   font-size: 1rem;
+  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-
 /* ===================================
-    RECENT RACES HEADER
+    RECENT RACES HEADER  
     =================================== */
 
-.recent-races-header {
+.recent-races-header{
   display: flex;
   padding: 0.625rem 1.25rem;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
+  align-self: stretch;
 }
 
-.recent-races-header-text {
+.recent-races-header-text{
   color: #000;
-  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-family: Oswald;
   font-size: 1.625rem;
+  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.filter-container {
+.filter-container{
   display: flex;
   align-items: flex-start;
   gap: 0.8125rem;
 }
 
-.filter-text {
+.filter-text{
   color: #000;
-  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-family: Oswald;
   font-size: 1.125rem;
+  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 
 /* ===================================
-    RECENT RACES CONTAINER
+    RECENT RACES CARD  
     =================================== */
 
-.recent-races-container {
+.recent-races-container{
   display: flex;
   padding: 0.625rem 1.25rem;
   flex-direction: column;
   align-items: center;
   gap: 1.25rem;
+  flex: 1 0 0;
+  align-self: stretch;
   width: 100%;
 }
 
+/* RACE CARD */
 
-/* ===================================
-    RACE CARD
-    =================================== */
-
-.race-card {
+.race-card{
   display: flex;
   padding: 0.75rem 0.625rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.6875rem;
-  width: 100%;
+  align-self: stretch;
   background: #0C171E;
   border-radius: 0.625rem;
-  cursor: pointer;
 }
 
 /* PLACE TIME */
 
-.place-time {
+.place-time{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 100%;
+  align-self: stretch;
 }
 
-.place {
+.place{
   display: flex;
-  width: 15vw;
-  aspect-ratio: 1 / 1;
+  width: 3.5625rem;
+  height: 3.5625rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.625rem;
+  aspect-ratio: 1/1;
   background: #F2F7FB;
   border-radius: 0.625rem;
 }
 
-.place-number {
+.place-number{
   color: #000;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.8125rem;          /* 29px */
+  font-family: Oswald;
+  font-size: 1.8125rem;
+  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.place-suffix {
+.place-suffix{
   color: #000;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1rem;               /* 16px */
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.time {
+.time{
   display: flex;
-  padding: 0.25rem 0.75rem;      /* 4px 12px */
+  padding: 0.25rem 0.75rem;
   justify-content: center;
   align-items: center;
   background: #F2F7FB;
   border-radius: 0.625rem;
 }
 
-.time-text {
+.time-text{
   color: #111;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.25rem;            /* 20px */
+  font-family: Oswald;
+  font-size: 1.25rem;
+  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
 /* RACE TITLE */
 
-.race-title {
+.race-title{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.125rem;                 /* 2px */
-  width: 100%;
+  gap: 0.125rem;
+  align-self: stretch;
 }
 
-.event-title {
-  width: 100%;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.125rem;           /* 18px */
+.event-title{
+  align-self: stretch;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.event-sub-title {
+.event-sub-title{
   color: #EAF2F9;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;               /* 16px */
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
 
 /* RACE DETAILS */
 
-.race-details {
+.race-details{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.4375rem;                /* 7px */
+  gap: 0.4375rem;
 }
 
-.date,
-.location,
-.runner {
-  display: flex;
-  align-items: center;
-  gap: 0.9375rem;                /* 15px */
-}
 
-.date-text,
-.location-text,
-.runner-text {
+.date-text, .location-text, .runner-text{
   color: #919191;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;               /* 16px */
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.date-vector,
-.location-vector,
-.runner-vector {
-  width: 0.875rem;               /* 14px */
-  height: 1rem;                  /* 16px */
+.date, .location, .runner {
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
 }
 
+.date-vector, .location-vector, .runner-vector{
+  width: 0.875rem;
+  height: 1rem;
+}
 
 /* ===================================
     HISTORICAL RACE DATA
     =================================== */
 
-.historical-container {
+
+.historical-container{
   display: flex;
-  padding: 0.5rem;               /* 8px */
+  padding: 0.5rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.625rem;                 /* 10px */
-  width: 100%;
-  background: #fff;
+  gap: 0.625rem;
+  align-self: stretch;
+  background: #FFF;
   border-radius: 0.625rem;
-  max-height: 50vh;
-  overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
-  opacity: 1;
 }
 
-.historical-container.hidden {
-  max-height: 0;
-  opacity: 0;
-  padding: 0;
-}
+/* TIME - PLACE - GRADE */
 
-/* PLACE TIME GRADE */
-
-.historical-place-time-grade {
+.historical-place-time-grade{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-self: stretch;
   width: 100%;
 }
 
-.historical-place-grade {
+/* PLACE - GRADE */
+
+.historical-place-grade{
   display: flex;
   align-items: flex-start;
-  gap: 0.625rem;                 /* 10px */
+  gap: 0.625rem;
 }
 
-.historical-place {
+/* PLACE */
+
+.historical-place{
   display: flex;
-  width: 15vw;
-  aspect-ratio: 1 / 1;
+  width: 3.5625rem;
+  height: 3.5625rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.625rem;
+  aspect-ratio: 1/1;
   background: #192732;
   border-radius: 0.625rem;
 }
 
-.historical-place-text {
-  color: #fff;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.625rem;           /* 26px */
+.historical-place-text{
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 1.625rem;
+  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.historical-place-suffix {
-  color: #fff;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1rem;               /* 16px */
+.historical-place-suffix{
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.historical-grade {
+/* GRADE */
+
+.historical-grade{
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.625rem;
 }
 
-.historical-grade-text {
+.historical-grade-text{
   color: #0C171E;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.125rem;           /* 18px */
+  font-family: Oswald;
+  font-size: 1.125rem;
+  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.historical-time {
+/* TIME */
+
+.historical-time{
   display: flex;
-  padding: 0.25rem 0.75rem;      /* 4px 12px */
+  padding: 0.25rem 0.75rem;
   justify-content: center;
   align-items: center;
   background: #192732;
@@ -424,70 +445,102 @@ body {
   border-radius: 0.625rem;
 }
 
-.historical-time-text {
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.125rem;           /* 18px */
+.historical-time-text{
+  color: #FFF;
+  font-family: roboto;
+  font-size: 1.125rem;
+  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
+
 /* HISTORICAL RACE DETAILS */
 
-.historical-date-location-runners {
+.historical-date-location-runners{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.4375rem;                /* 7px */
+  gap: 0.4375rem;
 }
 
-.historical-date,
-.historical-location,
-.historical-runners {
+/* DATE */
+
+.historical-date, .historical-location, .historical-runners{
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 0.9375rem;                /* 15px */
+  gap: 0.9375rem;
 }
 
-.historical-date-text,
-.historical-location-text,
-.historical-runner-text {
+.historical-date-vector, .historical-location-vector, .historical-runner-vector{
+  width: 0.875rem;
+  height: 1rem;
+}
+
+.historical-date-text, .historical-location-text, .historical-runner-text{
   color: #474747;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;               /* 16px */
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.historical-date-vector,
-.historical-location-vector {
-  width: 0.875rem;               /* 14px */
-  height: 1rem;                  /* 16px */
-}
+/* CHEVRON */
 
-.historical-runner-vector {
-  width: 0.875rem;               /* 14px */
-  height: 1.0625rem;             /* 17px */
-}
-
-
-/* ===================================
-    CHEVRON
-    =================================== */
-
-.chevron-container {
+.chevron-container{
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+}
+
+.chevron{
+  display: flex;
+  width: 0.75rem;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  gap: 0.625rem;
+}
+
+.chevron-vector{
+  width: 0.75rem;
+  height: 0.463125rem;
+}
+
+
+/* COLLAPSE HISTORICAL DATA */
+
+.historical-container {
+    max-height: 31.25rem;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+    opacity: 1;
+}
+
+.historical-container.hidden {
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
 }
 
 .chevron-vector {
-  width: 0.75rem;                /* 12px */
-  height: 0.4631rem;             /* 7.41px */
-  transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .chevron-vector.rotated {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
+
+
+/* TODO
+
+1. find a way to get 2x4 on tablet
+
+2. do all manual media queries for 1024px desktop
+
+*/
