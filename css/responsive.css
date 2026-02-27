@@ -1,1 +1,62 @@
+/* ===================================
+    TABLET — 48em (768px)
+    =================================== */
 
+@media (min-width: 48em) {
+
+  html {
+    font-size: 18px; /* all rem values scale up by 1.125x */
+  }
+
+  /* Cap and center content */
+  .hero-header,
+  /* .carrer-stats, */
+  /* .carrer-stat-table, */
+  .recent-races-header,
+  .recent-races-container {
+    max-width: 43.75rem; /* 700px */
+    margin-inline: auto;
+  }
+
+  .recent-races-header {
+    align-items: flex-start;
+  }
+}
+
+
+/* ===================================
+    DESKTOP — 64em (1024px)
+    =================================== */
+
+@media (min-width: 64em) {
+
+  html {
+    font-size: 20px; /* all rem values scale up by 1.25x */
+  }
+
+  body {
+    align-items: center;
+  }
+
+  /* Widen content cap for desktop */
+  .hero-header,
+  /* .carrer-stats, */
+  /* .carrer-stat-table, */
+  .recent-races-header,
+  .recent-races-container {
+    max-width: 56.25rem; /* 900px */
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .recent-races-header {
+    align-items: flex-start;
+  }
+
+    .carrer-stat-card {
+    flex: 0 0 calc(25% - 0.75rem); /* 4 per row, minus gap */
+    max-width: calc(25% - 0.75rem);
+    aspect-ratio: 1 / 1;
+  }
+
+}
