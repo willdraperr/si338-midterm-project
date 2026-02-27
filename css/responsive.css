@@ -24,6 +24,12 @@
   font-size: clamp(1rem, 2.38vw, 1.5625rem);
 }
 
+.header-image img{
+  width: 8.5rem;
+  height: 21.5rem;
+
+}
+
 /* ===================================
     CAREER STATS
     =================================== */
@@ -109,5 +115,127 @@
 @media (min-width: 64em) {
 
 
+/* HEADER */
+
+.hero-text-garrett{
+  font-size: 62px
+}
+
+.hero-text-comer{
+ font-size: 92px;
+}
+
+.hero-sub-1-text{
+  font-size: 30px;
+}
+
+.hero-sub-2-text{
+  font-size: 25px;
+}
+
+.header-image img{
+  width: 184px;
+  height: 467px;
+}
+
+.hero-header{
+gap: 30px;
+
+}
+
+/* CARRER STATS */
+
+.carrer-stat-card{
+  width: 160px;
+  height: 160px;
+}
+
+.carrer-stats-header{
+  font-size:31px;
+}
+
+.carrer-stat{
+  font-size: 31px;
+}
+
+.carrer-stat-description{
+  font-size: 20px;
+}
+
+/* RECENT RACES */
+
+.recent-races-header-text{
+    font-size: 31px;
+}
+
+.filter-text{
+  font-size: 22px;
+}
+/* xx */
+
+.place{
+  width: 67px;
+  height: 67px;
+}
+
+.place-number{
+    font-size: 39px;
+}
+
+.place-suffix{
+  font-size: 18px;
+}
+
+.time-text{
+  font-size: 25px;
+}
+
+.event-title{
+  font-size: 22px;
+}
+
+.event-sub-title{
+    font-size: 20px;
+}
+
+/* DETAILS */
+
+.date-text, .location-text, .runner-text{
+    font-size: 20px;
+}
+
+.date-vector, .location-vector, .runner-vector{
+  width: 16px;
+  height: 20px;
+}
+
+/* HISTORICAL */
+.historical-place-text{
+    font-size: 31px;
+}
+
+.historical-place-suffix{
+    font-size: 18px;
+}
+
+.historical-grade-text{
+    font-size: 22px;
+}
+
+.historical-time-text{
+    font-size: 22px;
+
+}
+
+.historical-date-vector, .historical-location-vector, .historical-runner-vector{
+  width: 16px;
+  height: 20px;
+}
+
+.historical-date-text, .historical-location-text, .historical-runner-text{
+  font-size: 20px;
+}
+
+}
 
 }
