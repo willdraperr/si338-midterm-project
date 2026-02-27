@@ -22,7 +22,6 @@ body{
   align-items: flex-start;
   align-self: stretch;
   gap: 0.625rem;
-  border: red solid;
 }
 
 .header-text{
@@ -31,7 +30,6 @@ body{
   justify-content: center;
   align-items: center;
   gap: 0.25rem;
-  border: green solid;
 }
 
 .hero-text{
@@ -90,6 +88,7 @@ body{
 .header-image img{
   width: 6.125rem;
   height: 15.5625rem;
+  border: red solid;
 }
 
 
@@ -103,7 +102,6 @@ body{
   align-items: center;
   gap: 2.375rem;
   align-self: stretch;
-  border: black solid;
 }
 
 .carrer-stats-header{
@@ -139,7 +137,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.5625rem;
+  gap: 1.0rem;
   background: #0C171E;
   border-radius: 0.625rem;
 }
