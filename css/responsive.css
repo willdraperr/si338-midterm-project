@@ -4,24 +4,102 @@
 
 @media (min-width: 48em) {
 
-  html {
-    font-size: 18px; /* all rem values scale up by 1.125x */
-  }
+/* ===================================
+    HEADER
+    =================================== */
 
-  /* Cap and center content */
-  .hero-header,
-  /* .carrer-stats, */
-  /* .carrer-stat-table, */
-  .recent-races-header,
-  .recent-races-container {
-    max-width: 43.75rem; /* 700px */
-    margin-inline: auto;
-  }
-
-  .recent-races-header {
-    align-items: flex-start;
-  }
+.hero-text-garrett{
+  font-size: clamp(1.4375rem, 9.26vw, 3.625rem);
 }
+
+.hero-text-comer{
+  font-size: clamp(1.875rem, 11.9vw, 4.6875rem);
+}
+
+.hero-sub-1-text{
+  font-size: clamp(1.125rem, 3.17vw, 1.875rem);
+}
+
+.hero-sub-2-text{
+  font-size: clamp(1rem, 2.38vw, 1.5625rem);
+}
+
+/* ===================================
+    CAREER STATS
+    =================================== */
+
+.carrer-stats-header{
+  font-size: clamp(1.625rem, 1.32vw, 1.9375rem);
+}
+
+.carrer-stat{
+  font-size: clamp(1.625rem, 1.32vw, 1.9375rem);
+}
+
+.carrer-stat-description{
+  font-size: clamp(1rem, 1.06vw, 1.25rem);
+}
+
+/* ===================================
+    RECENT RACES
+    =================================== */
+
+.recent-races-header-text{
+  font-size: clamp(1.625rem, 1.32vw, 1.9375rem);
+}
+
+.filter-text{
+  font-size: clamp(1.125rem, 1.06vw, 1.375rem);
+}
+
+.place-number{
+  font-size: clamp(1.8125rem, 2.65vw, 2.4375rem);
+}
+
+.place-suffix{
+  font-size: clamp(1rem, 0.53vw, 1.125rem);
+}
+
+.time-text{
+  font-size: clamp(1.25rem, 1.32vw, 1.5625rem);
+}
+
+.event-title{
+  font-size: clamp(1.125rem, 1.06vw, 1.375rem);
+}
+
+.event-sub-title{
+  font-size: clamp(1rem, 1.06vw, 1.25rem);
+}
+
+.date-text, .location-text, .runner-text{
+  font-size: clamp(1rem, 1.06vw, 1.25rem);
+}
+
+/* ===================================
+    HISTORICAL
+    =================================== */
+
+.historical-place-text{
+  font-size: clamp(1.625rem, 1.32vw, 1.9375rem);
+}
+
+.historical-place-suffix{
+  font-size: clamp(1rem, 0.53vw, 1.125rem);
+}
+
+.historical-grade-text{
+  font-size: clamp(1.125rem, 1.06vw, 1.375rem);
+}
+
+.historical-time-text{
+  font-size: clamp(1.125rem, 1.06vw, 1.375rem);
+}
+
+.historical-date-text, .historical-location-text, .historical-runner-text{
+  font-size: clamp(1rem, 1.06vw, 1.25rem);
+}
+
 
 
 /* ===================================
@@ -30,33 +108,6 @@
 
 @media (min-width: 64em) {
 
-  html {
-    font-size: 20px; /* all rem values scale up by 1.25x */
-  }
 
-  body {
-    align-items: center;
-  }
-
-  /* Widen content cap for desktop */
-  .hero-header,
-  /* .carrer-stats, */
-  /* .carrer-stat-table, */
-  .recent-races-header,
-  .recent-races-container {
-    max-width: 56.25rem; /* 900px */
-    width: 100%;
-    margin-inline: auto;
-  }
-
-  .recent-races-header {
-    align-items: flex-start;
-  }
-
-    .carrer-stat-card {
-    flex: 0 0 calc(25% - 0.75rem); /* 4 per row, minus gap */
-    max-width: calc(25% - 0.75rem);
-    aspect-ratio: 1 / 1;
-  }
 
 }
