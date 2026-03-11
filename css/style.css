@@ -88,15 +88,14 @@ body{
 .header-image img{
   width: 6.125rem;
   height: 15.5625rem;
-  border: red solid;
 }
 
 
 /* ===================================
-    CARRER STATS HEADER
+    career STATS HEADER
     =================================== */
 
-.carrer-stats{
+.career-stats{
   display: flex;
   padding: 0.625rem 1.25rem;
   align-items: center;
@@ -104,7 +103,7 @@ body{
   align-self: stretch;
 }
 
-.carrer-stats-header{
+.career-stats-header{
   color: #000;
   font-family: Oswald;
   font-size: 1.625rem;
@@ -114,10 +113,10 @@ body{
 }
 
 /* ===================================
-    CARRER STAT BOXES
+    career STAT BOXES
     =================================== */
 
-.carrer-stat-table{
+.career-stat-table{
   display: flex;
   padding: 1.25rem;
   align-items: flex-start;
@@ -130,7 +129,7 @@ body{
   align-items: center;
 }
 
-.carrer-stat-card{
+.career-stat-card{
   display: flex;
   width: 8.125rem;
   height: 8.125rem;
@@ -142,7 +141,7 @@ body{
   border-radius: 0.625rem;
 }
 
-.carrer-stat{
+.career-stat{
   color: #FFF;
   text-align: center;
   font-family: Oswald;
@@ -152,7 +151,7 @@ body{
   line-height: normal;
 }
 
-.carrer-stat-description{
+.career-stat-description{
   color: #C9C8C8;
   text-align: center;
   font-family: Roboto;
@@ -200,10 +199,39 @@ body{
   line-height: normal;
 }
 
+.year-text{
+  color: #000;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 
 /* ===================================
     RECENT RACES CARD  
     =================================== */
+
+  .year-header{
+      display: flex;
+      padding: 0.625rem 1.25rem;
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: stretch;
+}
+
+.year-header-text{
+  color: #000;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 
 .recent-races-container{
   display: flex;
@@ -270,12 +298,30 @@ body{
 }
 
 .time{
+  display: inline-flex;
+  padding: 4px 16px;
+  align-items: center;
+  gap: 7px;
+  border-radius: 0.625rem;;
+  background: #F2F7FB;
+}
+
+.pr-stamp{
   display: flex;
-  padding: 0.25rem 0.75rem;
   justify-content: center;
   align-items: center;
-  background: #F2F7FB;
-  border-radius: 0.625rem;
+  border: solid #B71007;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.pr-text{
+  color: #192732;
+  font-family: roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .time-text{
@@ -384,15 +430,13 @@ body{
 
 .historical-place{
   display: flex;
-  width: 3.5625rem;
-  height: 3.5625rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.625rem;
   aspect-ratio: 1/1;
   background: #192732;
   border-radius: 0.625rem;
+  padding: 0 5px;
 }
 
 .historical-place-text{
@@ -533,12 +577,3 @@ body{
 .chevron-vector.rotated {
     transform: rotate(180deg);
 }
-
-
-/* TODO
-
-1. find a way to get 2x4 on tablet
-
-2. do all manual media queries for 1024px desktop
-
-*/
