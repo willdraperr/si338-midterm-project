@@ -1,245 +1,626 @@
-/* ===================================
-    TABLET — 48em (768px)
-    =================================== */
+*{
+  box-sizing: border-box;
+}
 
-@media (min-width: 48em) {
+body{
+  background-color: #F2F7FB;
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  /* margin: 0 30px; */
+}
 
 /* ===================================
     HEADER
     =================================== */
 
-.hero-text-garrett{
-  font-size: clamp(1.4375rem, 9.26vw, 3.625rem);
-}
-
-.hero-text-comer{
-  font-size: clamp(1.875rem, 11.9vw, 4.6875rem);
-}
-
-.hero-sub-1-text{
-  font-size: clamp(1.125rem, 3.17vw, 1.875rem);
-}
-
-.hero-sub-2-text{
-  font-size: clamp(1rem, 2.38vw, 1.5625rem);
-}
-
-.header-image img{
-  width: 8.5rem;
-  height: 21.5rem;
-
-}
-
-/* ===================================
-    CAREER STATS
-    =================================== */
-
-.carrer-stats-header{
-  font-size: clamp(1.625rem, 1.32vw, 1.9375rem);
-}
-
-.carrer-stat{
-  font-size: clamp(1.625rem, 1.32vw, 1.9375rem);
-}
-
-.carrer-stat-description{
-  font-size: clamp(1rem, 1.06vw, 1.25rem);
-}
-
-/* ===================================
-    RECENT RACES
-    =================================== */
-
-.recent-races-header-text{
-  font-size: clamp(1.625rem, 1.32vw, 1.9375rem);
-}
-
-.filter-text{
-  font-size: clamp(1.125rem, 1.06vw, 1.375rem);
-}
-
-.place-number{
-  font-size: clamp(1.8125rem, 2.65vw, 2.4375rem);
-}
-
-.place-suffix{
-  font-size: clamp(1rem, 0.53vw, 1.125rem);
-}
-
-.time-text{
-  font-size: clamp(1.25rem, 1.32vw, 1.5625rem);
-}
-
-.event-title{
-  font-size: clamp(1.125rem, 1.06vw, 1.375rem);
-}
-
-.event-sub-title{
-  font-size: clamp(1rem, 1.06vw, 1.25rem);
-}
-
-.date-text, .location-text, .runner-text{
-  font-size: clamp(1rem, 1.06vw, 1.25rem);
-}
-
-/* ===================================
-    HISTORICAL
-    =================================== */
-
-.historical-place-text{
-  font-size: clamp(1.625rem, 1.32vw, 1.9375rem);
-}
-
-.historical-place-suffix{
-  font-size: clamp(1rem, 0.53vw, 1.125rem);
-}
-
-.historical-grade-text{
-  font-size: clamp(1.125rem, 1.06vw, 1.375rem);
-}
-
-.historical-time-text{
-  font-size: clamp(1.125rem, 1.06vw, 1.375rem);
-}
-
-.historical-date-text, .historical-location-text, .historical-runner-text{
-  font-size: clamp(1rem, 1.06vw, 1.25rem);
-}
-
-.gallery-section {
-    display: flex;
-    flex-direction: column;
-    align-self: stretch;
-}
-
-}
-
-
-/* ===================================
-    DESKTOP — 64em (1024px)
-    =================================== */
-
-@media (min-width: 64em) {
-
-
-/* HEADER */
-
-.hero-text-garrett{
-  font-size: 3.875rem;       /* 62px */
-}
-
-.hero-text-comer{
- font-size: 5.75rem;         /* 92px */
-}
-
-.hero-sub-1-text{
-  font-size: 1.875rem;       /* 30px */
-}
-
-.hero-sub-2-text{
-  font-size: 1.5625rem;      /* 25px */
-}
-
-.header-image img{
-  width: 11.5rem;            /* 184px */
-  height: 29.1875rem;        /* 467px */
-}
-
 .hero-header{
-  gap: 1.875rem;             /* 30px */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 0.625rem;
 }
 
-/* CARRER STATS */
-
-.carrer-stat-card{
-  width: 10rem;              /* 160px */
-  height: 10rem;             /* 160px */
+.header-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
 }
 
-.carrer-stats-header{
-  font-size: 1.9375rem;      /* 31px */
+.hero-text{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.125rem;
+  align-self: stretch;
 }
 
-.carrer-stat{
-  font-size: 1.9375rem;      /* 31px */
+/* TEXT STYLES */
+
+.hero-text-garrett{
+  color: #000;
+  font-family: Oswald;
+  font-size: 1.4375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.carrer-stat-description{
-  font-size: 1.25rem;        /* 20px */
+.hero-text-comer{
+  color: #000;
+  font-family: Oswald;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.625rem;
 }
 
-/* RECENT RACES */
+.hero-sub-1-text{
+  color: #000;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: right;
+  align-self:stretch;
+}
+
+.hero-sub-2-text{
+  color: #000;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: right;
+  align-self:stretch;
+}
+
+
+/* IMAGE STYLE */
+
+.header-image img{
+  width: 6.125rem;
+  height: 15.5625rem;
+}
+
+
+/* ===================================
+    career STATS HEADER
+    =================================== */
+
+.career-stats{
+  display: flex;
+  padding: 0.625rem 1.25rem;
+  align-items: center;
+  gap: 2.375rem;
+  align-self: stretch;
+}
+
+.career-stats-header{
+  color: #000;
+  font-family: Oswald;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* ===================================
+    career STAT BOXES
+    =================================== */
+
+.career-stat-table{
+  display: flex;
+  padding: 1.25rem;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0.75rem;
+  align-self: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.career-stat-card{
+  display: flex;
+  width: 8.125rem;
+  height: 8.125rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.0rem;
+  background: #0C171E;
+  border-radius: 0.625rem;
+}
+
+.career-stat{
+  color: #FFF;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.career-stat-description{
+  color: #C9C8C8;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* ===================================
+    RECENT RACES HEADER  
+    =================================== */
+
+.recent-races-header{
+  display: flex;
+  padding: 0.625rem 1.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
 
 .recent-races-header-text{
-  font-size: 1.9375rem;      /* 31px */
+  color: #000;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.filter-container{
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8125rem;
 }
 
 .filter-text{
-  font-size: 1.375rem;       /* 22px */
+  color: #000;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.year-text{
+  color: #000;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+/* ===================================
+    RECENT RACES CARD  
+    =================================== */
+
+  .year-header{
+      display: flex;
+      padding: 0.625rem 1.25rem;
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: stretch;
+}
+
+.year-header-text{
+  color: #000;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+.recent-races-container{
+  display: flex;
+  padding: 0.625rem 1.25rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  flex: 1 0 0;
+  align-self: stretch;
+  width: 100%;
+}
+
+/* RACE CARD */
+
+.race-card{
+  display: flex;
+  padding: 0.75rem 0.625rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6875rem;
+  align-self: stretch;
+  background: #0C171E;
+  border-radius: 0.625rem;
+}
+
+/* PLACE TIME */
+
+.place-time{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
 }
 
 .place{
-  width: 4.1875rem;          /* 67px */
-  height: 4.1875rem;         /* 67px */
+  display: flex;
+  width: 3.5625rem;
+  height: 3.5625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  aspect-ratio: 1/1;
+  background: #F2F7FB;
+  border-radius: 0.625rem;
 }
 
 .place-number{
-  font-size: 2.4375rem;      /* 39px */
+  color: #000;
+  font-family: Oswald;
+  font-size: 1.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .place-suffix{
-  font-size: 1.125rem;       /* 18px */
+  color: #000;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.time{
+  display: inline-flex;
+  padding: 4px 16px;
+  align-items: center;
+  gap: 7px;
+  border-radius: 0.625rem;;
+  background: #F2F7FB;
+}
+
+.pr-stamp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid #B71007;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.pr-text{
+  color: #192732;
+  font-family: roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .time-text{
-  font-size: 1.5625rem;      /* 25px */
+  color: #111;
+  font-family: Oswald;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* RACE TITLE */
+
+.race-title{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.125rem;
+  align-self: stretch;
 }
 
 .event-title{
-  font-size: 1.375rem;       /* 22px */
+  align-self: stretch;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .event-sub-title{
-  font-size: 1.25rem;        /* 20px */
+  color: #EAF2F9;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
-/* DETAILS */
+/* RACE DETAILS */
+
+.race-details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4375rem;
+}
+
 
 .date-text, .location-text, .runner-text{
-  font-size: 1.25rem;        /* 20px */
+  color: #919191;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.date, .location, .runner {
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
 }
 
 .date-vector, .location-vector, .runner-vector{
-  width: 1rem;               /* 16px */
-  height: 1.25rem;           /* 20px */
+  width: 0.875rem;
+  height: 1rem;
 }
 
-/* HISTORICAL */
+/* ===================================
+    HISTORICAL RACE DATA
+    =================================== */
+
+
+.historical-container{
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+  align-self: stretch;
+  background: #FFF;
+  border-radius: 0.625rem;
+}
+
+/* TIME - PLACE - GRADE */
+
+.historical-place-time-grade{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+}
+
+/* PLACE - GRADE */
+
+.historical-place-grade{
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+
+/* PLACE */
+
+.historical-place{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  background: #192732;
+  border-radius: 0.625rem;
+  padding: 0 5px;
+}
+
 .historical-place-text{
-  font-size: 1.9375rem;      /* 31px */
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .historical-place-suffix{
-  font-size: 1.125rem;       /* 18px */
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* GRADE */
+
+.historical-grade{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
 }
 
 .historical-grade-text{
-  font-size: 1.375rem;       /* 22px */
+  color: #0C171E;
+  font-family: Oswald;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* TIME */
+
+.historical-time{
+  display: flex;
+  padding: 0.25rem 0.75rem;
+  justify-content: center;
+  align-items: center;
+  background: #192732;
+  align-self: flex-start;
+  border-radius: 0.625rem;
 }
 
 .historical-time-text{
-  font-size: 1.375rem;       /* 22px */
+  color: #FFF;
+  font-family: roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+/* HISTORICAL RACE DETAILS */
+
+.historical-date-location-runners{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4375rem;
+}
+
+/* DATE */
+
+.historical-date, .historical-location, .historical-runners{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9375rem;
 }
 
 .historical-date-vector, .historical-location-vector, .historical-runner-vector{
-  width: 1rem;               /* 16px */
-  height: 1.25rem;           /* 20px */
+  width: 0.875rem;
+  height: 1rem;
 }
 
 .historical-date-text, .historical-location-text, .historical-runner-text{
-  font-size: 1.25rem;        /* 20px */
+  color: #474747;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
+/* CHEVRON */
+
+.chevron-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
 }
 
+.chevron{
+  display: flex;
+  width: 0.75rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.chevron-vector{
+  width: 0.75rem;
+  height: 0.463125rem;
+}
+
+
+/* COLLAPSE HISTORICAL DATA */
+
+.historical-container {
+    max-height: 31.25rem;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+    opacity: 1;
+}
+
+.historical-container.hidden {
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+}
+
+.chevron-vector {
+    transition: transform 0.3s ease;
+}
+
+.chevron-vector.rotated {
+    transform: rotate(180deg);
+}
+
+/* ===================================
+    GALLERY
+    =================================== */
+
+.gallery-section {
+    display: none;
+}
+
+.gallery-header {
+    display: flex;
+    padding: 0.625rem 1.25rem;
+    align-items: center;
+    align-self: stretch;
+}
+
+.gallery-header-text {
+    color: #000;
+    font-family: Oswald;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.gallery-container {
+    display: flex;
+    padding: 0 1.25rem 1.25rem;
+    flex-direction: column;
+    gap: 5px;
+    align-self: stretch;
+}
+
+.gallery-row {
+    display: flex;
+    height: 524px;
+    align-items: flex-end;
+    gap: 5px;
+    align-self: stretch;
+}
+
+.gallery-img {
+    flex: 1 0 0;
+    align-self: stretch;
+    object-fit: cover;
+    border-radius: 0.375rem;
 }
