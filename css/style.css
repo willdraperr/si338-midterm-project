@@ -624,3 +624,11 @@ body{
     object-fit: cover;
     border-radius: 0.375rem;
 }
+
+.race-card[onclick="toggleCard(this)"] {
+    cursor: url('../assets/icon/runner-cursor-1.png') 0 0, pointer;
+}
+
+.race-card[onclick="toggleCard(this)"] .historical-container {
+    cursor: url('../assets/icon/runner-cursor-2.png') 0 0, default;
+}
